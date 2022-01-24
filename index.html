@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Generic's Film Recs</title>
+        <title>Friendly Film Recs</title>
         <link rel="stylesheet" href="style.css">
         <script defer src="script.js"></script>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h3 id="leftTitle">Friendly Film Recs</h3>
+            <p id="rightTitle">A collective film list for and by your friends</p>
+    <div id="upperContainer">
+        <img id="bigPoster" src="Insert Image Source" alt="[Insert Name Here]">
+        <div id="filmInfoContainer">
+            <ul id="filmInfo">
+                <li id="title"></li>
+                <li id="genre"></li>
+                <li id="description"></li>
+                <li id="user"></li>
+                <li id="recommendation"></li>
+                <li id="watches"><p id="number"></p> of your friends have watched!</li>
+                <button id="watchedButton"> Watched! </button>
+            </ul>
+        </div>
+    </div>
+        <div id="otherRecsContainer">
+             
+        </div>
+        <form id="newFilmRec">
+            <h2>Recommend your favorite!</h2>
+            <label for="newTitle">Title: </label>
+            <input id="inputTitle" type="text" name="newTitle" placeholder="Title">
+            <label for="newGenre">Genre: </label>
+            <input id="inputGenre" type="text" name="newGenre" placeholder="Genre of your movie">
+            <label for="newDescription">A Short Description:</label>
+            <input id="inputDescription" type="text" name="newDescription" placeholder="What is the film about?">
+            <label for="newUserRec">Recommended By: </label>
+            <input id="inputUser" type="text" name="newUserRec" placeholder="Your first name" >
+            <label for="newRec">Recommendation</label>
+            <input id="inputRec" type="text" name="newRec" placeholder="Why are you reccomending this film?">
+        </form>
     </body>
 </html>

@@ -1,3 +1,105 @@
-[
-   {}
-]
+{
+    "movies": [
+        {
+            "id": 1,
+            "title": "The Last Black Man in San Francisco",
+            "poster": "https://breanajanae.com/wp-content/uploads/2020/06/lbmsf.jpg",
+            "genre": "Drama",
+            "description": "Jimmie and his best friend Mont try to reclaim the house built by Jimmie's grandfather, launching them on a poignant odyssey that connects them to their past, even as it tests their friendship and sense of belonging in the place they call home.",
+            "recommendedBy": "Scarlett",
+            "recommendation": "Recommendation to Come",
+            "watches": 1
+        },
+        {
+            "id": 2,
+            "title": "The Lobster",
+            "poster":"https://www.themoviedb.org/t/p/original/oe3XoAL0he16IWLHFzdg32q5ty6.jpg",
+            "genre": "Dramedy",
+            "description": "In a dystopian society, single people must enter into a romantic relationship within a strict time limit of 45 days or be transformed into an animal of their choice.",
+            "recommendedBy": "Scarlett",
+            "recommendation": "Recommendation to Come",
+            "watches": 1
+        },
+        {
+            "id": 3,
+            "title": "Long Day's Journey Into Night",
+            "poster": "https://i.etsystatic.com/15666683/r/il/8deb69/2689711174/il_fullxfull.2689711174_ci7b.jpg",
+            "genre": "Mystery",
+            "description": "A man went back to Guizhou, found the tracks of a mysterious woman. He recalls the summer he spent with her twenty years ago.",
+            "recommendedBy": "Scarlett",
+            "recommendation": "Recommendation to Come",
+            "watches": 1
+        },
+        {
+            "id": 4,
+            "title": "Raise the Red Lantern",
+            "poster": "https://dyncdn.me/mimages/16399/poster_opt.jpg",
+            "genre": "Period Drama",
+            "description": "Teenage Songlian, whose family has been devastated by the recent death of her father, becomes the third concubine of wealthy Master Chen. She soon discovers that behind the palatial luxury of life in the master's house, she and her fellow concubines, Zhuoyan and Meishan, are pitted against each other in a struggle for his affections.",
+            "recommendedBy": "Scarlett",
+            "recommendation": "Recommendation to Come",
+            "watches": 1
+        },
+        {
+            "id": 5,
+            "title": "Marjoe",
+            "poster": "https://www.dvdplanetstore.pk/wp-content/uploads/2017/12/g58MqIxzhjGAIMP4IoNtPkvLFA3.jpg",
+            "genre": "Documentary",
+            "description": "In this revealing documentary, Southern evangelist Marjoe Gortner allows the filmmakers to record him swindling people out of money.",
+            "recommendedBy": "Scarlett",
+            "recommendation": "Recommendation to Come",
+            "watches": 1
+        },
+
+        {
+            "id": 6,
+            "title": "Marjoe",
+            "poster": "https://www.dvdplanetstore.pk/wp-content/uploads/2017/12/g58MqIxzhjGAIMP4IoNtPkvLFA3.jpg",
+            "genre": "Documentary",
+            "description": "In this revealing documentary, Southern evangelist Marjoe Gortner allows the filmmakers to record him swindling people out of money.",
+            "recommendedBy": "Scarlett",
+            "recommendation": "Recommendation to Come",
+            "watches": 1
+         },
+         {
+            "id": 7,
+            "title": "Marjoe",
+            "poster": "https://www.dvdplanetstore.pk/wp-content/uploads/2017/12/g58MqIxzhjGAIMP4IoNtPkvLFA3.jpg",
+            "genre": "Documentary",
+            "description": "In this revealing documentary, Southern evangelist Marjoe Gortner allows the filmmakers to record him swindling people out of money.",
+            "recommendedBy": "Scarlett",
+            "recommendation": "Recommendation to Come",
+            "watches": 1
+         },
+         {
+            "id": 8,
+            "title": "Marjoe",
+            "poster": "https://www.dvdplanetstore.pk/wp-content/uploads/2017/12/g58MqIxzhjGAIMP4IoNtPkvLFA3.jpg",
+            "genre": "Documentary",
+            "description": "In this revealing documentary, Southern evangelist Marjoe Gortner allows the filmmakers to record him swindling people out of money.",
+            "recommendedBy": "Scarlett",
+            "recommendation": "Recommendation to Come",
+            "watches": 1
+         },
+         {
+            "id": 9,
+            "title": "Marjoe",
+            "poster": "https://www.dvdplanetstore.pk/wp-content/uploads/2017/12/g58MqIxzhjGAIMP4IoNtPkvLFA3.jpg",
+            "genre": "Documentary",
+            "description": "In this revealing documentary, Southern evangelist Marjoe Gortner allows the filmmakers to record him swindling people out of money.",
+            "recommendedBy": "Scarlett",
+            "recommendation": "Recommendation to Come",
+            "watches": 1
+         },
+         {
+            "id": 10,
+            "title": "Marjoe",
+            "poster": "https://www.dvdplanetstore.pk/wp-content/uploads/2017/12/g58MqIxzhjGAIMP4IoNtPkvLFA3.jpg",
+            "genre": "Documentary",
+            "description": "In this revealing documentary, Southern evangelist Marjoe Gortner allows the filmmakers to record him swindling people out of money.",
+            "recommendedBy": "Scarlett",
+            "recommendation": "Recommendation to Come",
+            "watches": 1
+         }
+    ]
+}

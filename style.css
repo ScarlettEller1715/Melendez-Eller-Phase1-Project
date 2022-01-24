@@ -1,3 +1,74 @@
 body {
-    background: blue;
+    background: white;
+    font-family: "Lucida Sans Typewriter", 'Times New Roman', Times, serif;
+}
+
+#bigPoster {
+    width: 350px;
+    height: 500px;
+    padding-left: 15%;
+    padding-right: 60%;
+    padding-top: 1%;
+
+
+}
+
+#filmInfo {
+    bottom: 200px;
+    padding-left: 45%;
+    padding-right: 15%;
+    position: absolute;
+    list-style-type: none;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 35px;
+
+}
+
+#genre {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+#description {
+    font-size: 18px;
+    line-height: 30px;
+    font-style: italic;
+}
+
+#user {
+    font-size: 25px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+#leftTitle {
+    background-size: 30px;
+    color: black;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-left: 0px;
+    float: left;
+}
+
+#rightTitle {
+    float: right;
+    background-size: 20px;
+    font-weight: bold;
+}
+
+#watches {
+    display: inline-block;
+}
+
+#number {
+    display: inline-block;
+}
+
+#watchedButton {
+    color: blue
 }
