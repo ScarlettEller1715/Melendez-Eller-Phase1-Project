@@ -20,7 +20,6 @@
                 <li id="user"></li>
                 <li id="recommendation"></li>
                 <li id="watches"><p id="number"></p> of your friends have watched!</li>
-                <button id="watchedButton"> Watched! </button>
             </ul>
     </div>
             <div id="slider-area">
@@ -37,17 +36,22 @@
             </div>       
         
         <form id="newFilmRec">
+            <div class="form-container">
             <h2>Recommend your favorite!</h2>
-            <label for="newTitle">Title: </label>
+            <label class="label" for="newTitle">Title: </label>
             <input id="inputTitle" type="text" name="newTitle" placeholder="Title">
-            <label for="newGenre">Genre: </label>
+            <label class="label" for="newGenre">Genre: </label>
             <input id="inputGenre" type="text" name="newGenre" placeholder="Genre of your movie">
-            <label for="newDescription">A Short Description:</label>
+            <label class="label" for="newDescription">A Short Description:</label>
             <input id="inputDescription" type="text" name="newDescription" placeholder="What is the film about?">
-            <label for="newUserRec">Recommended By: </label>
+            <label class="label" for="newUserRec">Recommended By: </label>
             <input id="inputUser" type="text" name="newUserRec" placeholder="Your first name" >
-            <label for="newRec">Recommendation</label>
+            <label class="label" for="newRec">Recommendation</label>
             <input id="inputRec" type="text" name="newRec" placeholder="Why are you reccomending this film?">
+            <label class="label" for="newPoster">Link to Poster</label>
+            <input id="inputPoster" type="text" name="newPoster" placeholder="Link to the Film's Poster">
+            <input id="formButton" type='submit' value="Add Recommendation">
+            </div>
         </form>
     </body>
 </html>

@@ -1,14 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('http://localhost:3000/movies/4')
+    fetch('http://localhost:3000/movies/1')
         .then(res => res.json())
         .then(data1 => {
             displayFirstMovie(data1)
         })
-        fetch('http://localhost:3000/movies/')
+    fetch('http://localhost:3000/movies/')
         .then(res => res.json())
         .then(movies => movies.forEach(movie => {
             addingMoviePostersToCarousel(movie)
         }))
+    let form = document.querySelector('#newFilmRec')
+        form.addEventListener('submit', (submission) => {
+            submission.preventDefault()
+            handleInput(submission)
+        })
 
 })
 
@@ -28,15 +33,21 @@ function displayFirstMovie(movie1) {
     let newWatches = document.querySelector('#number')
         newWatches.textContent = `${movie1.watches}`
 
-    const watchedButton = document.querySelector('#watchedButton')
-    watchedButton.addEventListener('click', () => watchedMovie(movie1))
+    let newButton = document.createElement('button')
+        newButton.id = "watchedButton"
+        newButton.textContent = "Watched!"
+
+    let unorderedList = document.querySelector('#filmInfo')
+    unorderedList.appendChild(newButton)
+
+    newButton.addEventListener('click', () => watchedMovie(movie1))
     
 }
 
 function watchedMovie(movie) {
     let watchCount = document.querySelector('#number')
     watchCount.textContent = movie.watches + 1
-
+    
 }
 
 //grabbing the arrow buttons
@@ -54,25 +65,14 @@ rightCaroButton.addEventListener('click', () => {
 })
 
 function addingMoviePostersToCarousel(movie) {
-
-    let sliderArea = document.querySelector('#slider-area')
-    let sliderContainer = document.querySelector('.slider-container')
     let overallImagesContainer = document.querySelector('#my-slider')
-
-
-
     let emptyDiv = document.createElement('div') //slide-container
     let posterImg = document.createElement('img') //slide-image
-
-
-    posterImg.src = `${movie.poster}`
-    emptyDiv.classList.add('slide-container')
-
-    emptyDiv.appendChild(posterImg)
-    overallImagesContainer.appendChild(emptyDiv)
-
-    posterImg.addEventListener('click', () => displaySelectedMovie(movie))
-
+        posterImg.src = `${movie.poster}`
+        emptyDiv.classList.add('slide-container')
+        emptyDiv.appendChild(posterImg)
+        overallImagesContainer.appendChild(emptyDiv)
+        posterImg.addEventListener('click', () => displaySelectedMovie(movie))
 }
 
 function displaySelectedMovie(movie) {
@@ -90,6 +90,72 @@ function displaySelectedMovie(movie) {
         newPoster.src = `${movie.poster}`
     let newWatches = document.querySelector('#number')
         newWatches.textContent = `${movie.watches}`
+
+    const watchedButton = document.querySelector('#watchedButton')
+    watchedButton.addEventListener('click', () => watchedMovie(movie))
+}
+
+function handleInput(submission) {
+    let userTitle = (submission.target.inputTitle.value)
+    let userGenre = (submission.target.inputGenre.value)
+    let userDesc = (submission.target.inputDescription.value)
+    let user = (submission.target.inputUser.value)
+    let userRec = (submission.target.inputRec.value)
+    let userPoster = (submission.target.inputPoster.value)
+
+    let newTitle = document.querySelector('#title')
+        newTitle.textContent = `${userTitle}`
+    let newGenre = document.querySelector('#genre')
+        newGenre.textContent = `${userGenre}`
+    let newDescription = document.querySelector('#description')
+        newDescription.textContent = `${userDesc}`
+    let newUser = document.querySelector('#user')
+        newUser.textContent = `Recommended by ${user}`
+    let newRec = document.querySelector('#recommendation')
+        newRec.textContent = `${userRec}`
+    let newPoster = document.querySelector('#bigPoster')
+        newPoster.src = `${userPoster}`
+    let newWatches = document.querySelector('#number')
+        newWatches.textContent = 1
+
+
+    const watchedButton = document.querySelector('#watchedButton')
+    watchedButton.addEventListener('click', () => watchedMovie(movie))
+
+
+    let overallImagesContainer = document.querySelector('#my-slider')
+    let emptyDiv = document.createElement('div') //slide-container
+    let posterImg = document.createElement('img') //slide-image
+        posterImg.src = `${userPoster}`
+        emptyDiv.classList.add('slide-container')
+        emptyDiv.appendChild(posterImg)
+        overallImagesContainer.appendChild(emptyDiv)
+        posterImg.addEventListener('click', () => pullInputedValue(submission))
+}
+
+function pullInputedValue(submission) {
+    let userTitle = (submission.target.inputTitle.value)
+    let userGenre = (submission.target.inputGenre.value)
+    let userDesc = (submission.target.inputDescription.value)
+    let user = (submission.target.inputUser.value)
+    let userRec = (submission.target.inputRec.value)
+    let userPoster = (submission.target.inputPoster.value)
+
+    let newTitle = document.querySelector('#title')
+        newTitle.textContent = `${userTitle}`
+    let newGenre = document.querySelector('#genre')
+        newGenre.textContent = `${userGenre}`
+    let newDescription = document.querySelector('#description')
+        newDescription.textContent = `${userDesc}`
+    let newUser = document.querySelector('#user')
+        newUser.textContent = `Recommended by ${user}`
+    let newRec = document.querySelector('#recommendation')
+        newRec.textContent = `${userRec}`
+    let newPoster = document.querySelector('#bigPoster')
+        newPoster.src = `${userPoster}`
+    let newWatches = document.querySelector('#number')
+        newWatches.textContent = 1
+
 
     const watchedButton = document.querySelector('#watchedButton')
     watchedButton.addEventListener('click', () => watchedMovie(movie))
