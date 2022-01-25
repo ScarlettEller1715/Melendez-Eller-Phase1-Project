@@ -3,61 +3,67 @@ body {
     font-family: "Lucida Sans Typewriter", 'Times New Roman', Times, serif;
 }
 
-#bigPoster {
-    width: 350px;
-    height: 500px;
-    padding-left: 15%;
-    padding-right: 60%;
-    padding-top: 1%;
-
+#upperContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    outline: auto;
+    justify-content: flex-start;
+    align-items: center;
 
 }
 
+#bigPoster {
+    width: 25%;
+    height: 50%;
+    padding-left: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    align-items: flex-start;
+}
+
 #filmInfo {
-    bottom: 200px;
-    padding-left: 45%;
-    padding-right: 15%;
-    position: absolute;
+    max-width: 50%;
     list-style-type: none;
+    align-items: flex-end;
 }
 
 #title {
     font-weight: bold;
-    font-size: 40px;
-    line-height: 35px;
+    font-size: 200%;
 
 }
 
 #genre {
-    font-size: 25px;
-    padding-top: 10px;
-    padding-bottom: 25px;
+ font-size: 150%;
 }
 
 #description {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 100%;
     font-style: italic;
+    padding-bottom: 10%;
 }
 
 #user {
-    font-size: 25px;
-    padding-top: 20px;
+    font-size: 125%;
     font-weight: bold;
 }
 
+#pageTitles {
+    padding-bottom: 5%;
+}
+
 #leftTitle {
-    background-size: 30px;
     color: black;
     font-size: 40px;
     margin-top: 0px;
     margin-left: 0px;
+    margin-bottom: 0%;
     float: left;
 }
 
 #rightTitle {
     float: right;
-    background-size: 20px;
     font-weight: bold;
 }
 
@@ -80,7 +86,7 @@ body {
     align-items: center;
 }
 
-.slide img {
+.slide-container img {
     height: 200px;
     border: 1px solid black;
     margin-left: 10px;

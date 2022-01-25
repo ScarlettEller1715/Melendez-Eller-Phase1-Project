@@ -4,13 +4,15 @@
         <title>Friendly Film Recs</title>
         <link rel="stylesheet" href="style.css">
         <script defer src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+    <div id="pageTitles">
         <h3 id="leftTitle">Friendly Film Recs</h3>
             <p id="rightTitle">A collective film list for and by your friends</p>
+    </div>
     <div id="upperContainer">
-        <img id="bigPoster" src="Insert Image Source" alt="[Insert Name Here]">
-        <div id="filmInfoContainer">
+            <img id="bigPoster" src="" alt="">
             <ul id="filmInfo">
                 <li id="title"></li>
                 <li id="genre"></li>
@@ -20,9 +22,7 @@
                 <li id="watches"><p id="number"></p> of your friends have watched!</li>
                 <button id="watchedButton"> Watched! </button>
             </ul>
-        </div>
     </div>
-        <!-- <div id="otherRecsContainer"> -->
             <div id="slider-area">
                 <div class="slider-container">
                     <h2>Other Recommendations: </h2>
@@ -32,66 +32,10 @@
                             <button id="right-button"> > </button>
                         </div>
                     </div>
-                    <div id="my-slider">
-        
-                        <div>
-                            <div class="slide">
-                                <img id="slide-img-1" src="https://images.squarespace-cdn.com/content/v1/5c5f909ee5f7d115a785fd8e/1583427044737-14H3GRLCB4OG2SMSRMBS/light-gray-box%402x.png?format=2500w" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide">
-                                <img id="slide-img-2" src="https://images.squarespace-cdn.com/content/v1/5c5f909ee5f7d115a785fd8e/1583427044737-14H3GRLCB4OG2SMSRMBS/light-gray-box%402x.png?format=2500w" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide">
-                                <img id="slide-img-3" src="https://images.squarespace-cdn.com/content/v1/5c5f909ee5f7d115a785fd8e/1583427044737-14H3GRLCB4OG2SMSRMBS/light-gray-box%402x.png?format=2500w" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide">
-                                <img id="slide-img-4" src="https://images.squarespace-cdn.com/content/v1/5c5f909ee5f7d115a785fd8e/1583427044737-14H3GRLCB4OG2SMSRMBS/light-gray-box%402x.png?format=2500w" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide">
-                                <img id="slide-img-5" src="https://images.squarespace-cdn.com/content/v1/5c5f909ee5f7d115a785fd8e/1583427044737-14H3GRLCB4OG2SMSRMBS/light-gray-box%402x.png?format=2500w" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide">
-                                <img id="slide-img-6" src="https://images.squarespace-cdn.com/content/v1/5c5f909ee5f7d115a785fd8e/1583427044737-14H3GRLCB4OG2SMSRMBS/light-gray-box%402x.png?format=2500w" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide">
-                                <img id="slide-img-7" src="https://images.squarespace-cdn.com/content/v1/5c5f909ee5f7d115a785fd8e/1583427044737-14H3GRLCB4OG2SMSRMBS/light-gray-box%402x.png?format=2500w" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide">
-                                <img id="slide-img-8" src="https://images.squarespace-cdn.com/content/v1/5c5f909ee5f7d115a785fd8e/1583427044737-14H3GRLCB4OG2SMSRMBS/light-gray-box%402x.png?format=2500w" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide">
-                                <img id="slide-img-9" src="https://images.squarespace-cdn.com/content/v1/5c5f909ee5f7d115a785fd8e/1583427044737-14H3GRLCB4OG2SMSRMBS/light-gray-box%402x.png?format=2500w" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="slide">
-                                <img id="slide-img-10" src="https://images.squarespace-cdn.com/content/v1/5c5f909ee5f7d115a785fd8e/1583427044737-14H3GRLCB4OG2SMSRMBS/light-gray-box%402x.png?format=2500w" alt="">
-                            </div>
-                        </div>
-        
-                    </div>
-        
+                    <div id="my-slider"></div>
                 </div>
-            </div>
+            </div>       
         
-             
-        </div>
         <form id="newFilmRec">
             <h2>Recommend your favorite!</h2>
             <label for="newTitle">Title: </label>

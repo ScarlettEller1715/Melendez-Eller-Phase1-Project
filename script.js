@@ -1,9 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('http://localhost:3000/movies/1')
+    fetch('http://localhost:3000/movies/4')
         .then(res => res.json())
         .then(data1 => {
             displayFirstMovie(data1)
         })
+        fetch('http://localhost:3000/movies/')
+        .then(res => res.json())
+        .then(movies => movies.forEach(movie => {
+            addingMoviePostersToCarousel(movie)
+        }))
+
 })
 
 function displayFirstMovie(movie1) {
@@ -14,7 +20,7 @@ function displayFirstMovie(movie1) {
     let newDescription = document.querySelector('#description')
         newDescription.textContent = `${movie1.description}`
     let newUser = document.querySelector('#user')
-        newUser.textContent = `${movie1.recommendedBy}`
+        newUser.textContent = `Recommended by ${movie1.recommendedBy}`
     let newRec = document.querySelector('#recommendation')
         newRec.textContent = `${movie1.recommendation}`
     let newPoster = document.querySelector('#bigPoster')
@@ -30,7 +36,6 @@ function displayFirstMovie(movie1) {
 function watchedMovie(movie) {
     let watchCount = document.querySelector('#number')
     watchCount.textContent = movie.watches + 1
-    watchedButton.remove()
 
 }
 
@@ -47,3 +52,45 @@ leftCaroButton.addEventListener('click', () => {
 rightCaroButton.addEventListener('click', () => {
     scrollBarArea.scrollLeft += 200;
 })
+
+function addingMoviePostersToCarousel(movie) {
+
+    let sliderArea = document.querySelector('#slider-area')
+    let sliderContainer = document.querySelector('.slider-container')
+    let overallImagesContainer = document.querySelector('#my-slider')
+
+
+
+    let emptyDiv = document.createElement('div') //slide-container
+    let posterImg = document.createElement('img') //slide-image
+
+
+    posterImg.src = `${movie.poster}`
+    emptyDiv.classList.add('slide-container')
+
+    emptyDiv.appendChild(posterImg)
+    overallImagesContainer.appendChild(emptyDiv)
+
+    posterImg.addEventListener('click', () => displaySelectedMovie(movie))
+
+}
+
+function displaySelectedMovie(movie) {
+    let newTitle = document.querySelector('#title')
+        newTitle.textContent = `${movie.title}`
+    let newGenre = document.querySelector('#genre')
+        newGenre.textContent = `${movie.genre}`
+    let newDescription = document.querySelector('#description')
+        newDescription.textContent = `${movie.description}`
+    let newUser = document.querySelector('#user')
+        newUser.textContent = `Recommended by ${movie.recommendedBy}`
+    let newRec = document.querySelector('#recommendation')
+        newRec.textContent = `${movie.recommendation}`
+    let newPoster = document.querySelector('#bigPoster')
+        newPoster.src = `${movie.poster}`
+    let newWatches = document.querySelector('#number')
+        newWatches.textContent = `${movie.watches}`
+
+    const watchedButton = document.querySelector('#watchedButton')
+    watchedButton.addEventListener('click', () => watchedMovie(movie))
+}
