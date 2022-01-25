@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('http://localhost:3000/movies/4')
+    fetch('http://localhost:3000/movies/1')
         .then(res => res.json())
         .then(data1 => {
             displayFirstMovie(data1)
@@ -33,3 +33,17 @@ function watchedMovie(movie) {
     watchedButton.remove()
 
 }
+
+//grabbing the arrow buttons
+const leftCaroButton = document.querySelector('#left-button')
+const rightCaroButton = document.querySelector('#right-button')
+const scrollBarArea = document.querySelector('#my-slider')
+
+leftCaroButton.addEventListener('click', () => {
+    scrollBarArea.scrollLeft -= 200; //amount that the slider moves (change to whatever the width of the poster is)
+    //add timeout f(x) so that it moves over (by a pixel width at a set time (ex every two seconds))
+})
+
+rightCaroButton.addEventListener('click', () => {
+    scrollBarArea.scrollLeft += 200;
+})

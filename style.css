@@ -72,3 +72,45 @@ body {
 #watchedButton {
     color: blue
 }
+
+#slider-area {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    height: 200px;
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+#my-slider {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 100vw
+}
+
+#left-button {
+    background-color: red;
+    z-index: 1;
+    display: flex;
+}
+
+#right-button {
+    background-color: blue;
+    z-index: 1;
+    display: flex;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 116px;
+    position: relative;
+}
