@@ -1,105 +1,104 @@
 {
-    "movies": [
-        {
-            "id": 1,
-            "title": "The Last Black Man in San Francisco",
-            "poster": "https://breanajanae.com/wp-content/uploads/2020/06/lbmsf.jpg",
-            "genre": "Drama",
-            "description": "Jimmie and his best friend Mont try to reclaim the house built by Jimmie's grandfather, launching them on a poignant odyssey that connects them to their past, even as it tests their friendship and sense of belonging in the place they call home.",
-            "recommendedBy": "Scarlett",
-            "recommendation": "Recommendation to Come",
-            "watches": 1
-        },
-        {
-            "id": 2,
-            "title": "The Lobster",
-            "poster":"https://www.themoviedb.org/t/p/original/oe3XoAL0he16IWLHFzdg32q5ty6.jpg",
-            "genre": "Dramedy",
-            "description": "In a dystopian society, single people must enter into a romantic relationship within a strict time limit of 45 days or be transformed into an animal of their choice.",
-            "recommendedBy": "Scarlett",
-            "recommendation": "Recommendation to Come",
-            "watches": 1
-        },
-        {
-            "id": 3,
-            "title": "Long Day's Journey Into Night",
-            "poster": "https://i.etsystatic.com/15666683/r/il/8deb69/2689711174/il_fullxfull.2689711174_ci7b.jpg",
-            "genre": "Mystery",
-            "description": "A man went back to Guizhou, found the tracks of a mysterious woman. He recalls the summer he spent with her twenty years ago.",
-            "recommendedBy": "Scarlett",
-            "recommendation": "Recommendation to Come",
-            "watches": 1
-        },
-        {
-            "id": 4,
-            "title": "Raise the Red Lantern",
-            "poster": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/02189c79-7fe8-49aa-a416-e2cc225a629d/d903h7p-ba10d8e3-7d30-4253-acf8-93c60c0ea3cf.jpg/v1/fill/w_1600,h_2371,q_75,strp/movie_poster_for_raise_the_red_lantern__by_joyfullycreating_d903h7p-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjM3MSIsInBhdGgiOiJcL2ZcLzAyMTg5Yzc5LTdmZTgtNDlhYS1hNDE2LWUyY2MyMjVhNjI5ZFwvZDkwM2g3cC1iYTEwZDhlMy03ZDMwLTQyNTMtYWNmOC05M2M2MGMwZWEzY2YuanBnIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.OLFlwMXYkLeVrNtxUn2M3NzvuKl8PKnX55i6pxz5MeM",
-            "genre": "Period Drama",
-            "description": "Teenage Songlian, whose family has been devastated by the recent death of her father, becomes the third concubine of wealthy Master Chen. She soon discovers that behind the palatial luxury of life in the master's house, she and her fellow concubines, Zhuoyan and Meishan, are pitted against each other in a struggle for his affections.",
-            "recommendedBy": "Scarlett",
-            "recommendation": "Recommendation to Come",
-            "watches": 1
-        },
-        {
-            "id": 5,
-            "title": "Marjoe",
-            "poster": "https://www.dvdplanetstore.pk/wp-content/uploads/2017/12/g58MqIxzhjGAIMP4IoNtPkvLFA3.jpg",
-            "genre": "Documentary",
-            "description": "In this revealing documentary, Southern evangelist Marjoe Gortner allows the filmmakers to record him swindling people out of money.",
-            "recommendedBy": "Scarlett",
-            "recommendation": "Recommendation to Come",
-            "watches": 1
-        },
-
-        {
-            "id": 6,
-            "title": "Eternal Sunshine of the Spotless Mind",
-            "poster": "https://m.media-amazon.com/images/M/MV5BMTY4NzcwODg3Nl5BMl5BanBnXkFtZTcwNTEwOTMyMw@@._V1_.jpg",
-            "genre": "Romance/Sci-fi",
-            "description": "After a painful breakup, Clementine (Kate Winslet) undergoes a procedure to erase memories of her former boyfriend Joel (Jim Carrey) from her mind. When Joel discovers that Clementine is going to extremes to forget their relationship, he undergoes the same procedure and slowly begins to forget the woman that he loved.",
-            "recommendedBy": "Alison",
-            "recommendation": "Recommendation to Come",
-            "watches": 1
-         },
-         {
-            "id": 7,
-            "title": "The Nightmare Before Christmas",
-            "poster": "https://m.media-amazon.com/images/M/MV5BNWE4OTNiM2ItMjY4Ni00ZTViLWFiZmEtZGEyNGY2ZmNlMzIyXkEyXkFqcGdeQXVyMDU5NDcxNw@@._V1_.jpg",
-            "genre": "Fantasy/Family",
-            "description": "The film follows the misadventures of Jack Skellington, Halloweentown's beloved pumpkin king, who has become bored with the same annual routine of frightening people in the 'real world.' When Jack accidentally stumbles on Christmastown, all bright colors and warm spirits, he gets a new lease on life -- he plots to bring Christmas under his control by kidnapping Santa Claus and taking over the role. But Jack soon discovers even the best-laid plans of mice and skeleton men can go seriously awry.",
-            "recommendedBy": "Alison",
-            "recommendation": "Recommendation to Come",
-            "watches": 1
-         },
-         {
-            "id": 8,
-            "title": "Isle of Dogs",
-            "poster": "https://m.media-amazon.com/images/M/MV5BZDQwOWQ2NmUtZThjZi00MGM0LTkzNDctMzcyMjcyOGI1OGRkXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg",
-            "genre": "Comedy/Adventure",
-            "description": "When, by executive decree, all the canine pets of Megasaki City are exiled to a vast garbage-dump called Trash Island, 12-year-old Atari sets off alone in a miniature Junior-Turbo Prop and flies across the river in search of his bodyguard-dog, Spots. There, with the assistance of a pack of newly-found mongrel friends, he begins an epic journey that will decide the fate and future of the entire Prefecture.",
-            "recommendedBy": "Alison",
-            "recommendation": "Recommendation to Come",
-            "watches": 1
-         },
-         {
-            "id": 9,
-            "title": "The Others",
-            "poster": "https://m.media-amazon.com/images/M/MV5BMTAxMDE4Mzc3ODNeQTJeQWpwZ15BbWU4MDY2Mjg4MDcx._V1_.jpg",
-            "genre": "Horror/Thriller",
-            "description": "Grace (Nicole Kidman), the devoutly religious mother of Anne (Alakina Mann) and Nicholas (James Bentley), moves her family to the English coast during World War II. She awaits word on her missing husband while protecting her children from a rare photosensitivity disease that causes the sun to harm them. Anne claims she sees ghosts, Grace initially thinks the new servants are playing tricks but chilling events and visions make her believe something supernatural has occurred.",
-            "recommendedBy": "Alison",
-            "recommendation": "Recommendation to Come",
-            "watches": 1
-         },
-         {
-            "id": 10,
-            "title": "Do the Right Thing",
-            "poster": "https://cdn.shopify.com/s/files/1/0630/8509/products/flat1266dr_large.jpeg?v=1468596595",
-            "genre": "Drama/Comedy",
-            "description": "Salvatore 'Sal' Fragione (Danny Aiello) is the Italian owner of a pizzeria in Brooklyn. A neighborhood local, Buggin' Out (Giancarlo Esposito), becomes upset when he sees that the pizzeria's Wall of Fame exhibits only Italian actors. Buggin' Out believes a pizzeria in a black neighborhood should showcase black actors, but Sal disagrees. The wall becomes a symbol of racism and hate to Buggin' Out and to other people in the neighborhood, and tensions rise.",
-            "recommendedBy": "Alison",
-            "recommendation": "Recommendation to Come",
-            "watches": 1
-         }
-    ]
+  "movies": [
+    {
+      "id": 1,
+      "title": "The Last Black Man in San Francisco",
+      "poster": "https://breanajanae.com/wp-content/uploads/2020/06/lbmsf.jpg",
+      "genre": "Drama",
+      "description": "Jimmie and his best friend Mont try to reclaim the house built by Jimmie's grandfather, launching them on a poignant odyssey that connects them to their past, even as it tests their friendship and sense of belonging in the place they call home.",
+      "recommendedBy": "Scarlett",
+      "recommendation": "Recommendation to Come",
+      "watches": 1
+    },
+    {
+      "id": 2,
+      "title": "The Lobster",
+      "poster": "https://www.themoviedb.org/t/p/original/oe3XoAL0he16IWLHFzdg32q5ty6.jpg",
+      "genre": "Dramedy",
+      "description": "In a dystopian society, single people must enter into a romantic relationship within a strict time limit of 45 days or be transformed into an animal of their choice.",
+      "recommendedBy": "Scarlett",
+      "recommendation": "Recommendation to Come",
+      "watches": 1
+    },
+    {
+      "id": 3,
+      "title": "Long Day's Journey Into Night",
+      "poster": "https://i.etsystatic.com/15666683/r/il/8deb69/2689711174/il_fullxfull.2689711174_ci7b.jpg",
+      "genre": "Mystery",
+      "description": "Luo Hongwu returns to his hometown of Kaili after being away for a long time. Almost immediately, he begins the search for the woman he loved, and whom he has never been able to forget.",
+      "recommendedBy": "Scarlett",
+      "recommendation": "Recommendation to Come",
+      "watches": 1
+    },
+    {
+      "id": 4,
+      "title": "Raise the Red Lantern",
+      "poster": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/02189c79-7fe8-49aa-a416-e2cc225a629d/d903h7p-ba10d8e3-7d30-4253-acf8-93c60c0ea3cf.jpg/v1/fill/w_1600,h_2371,q_75,strp/movie_poster_for_raise_the_red_lantern__by_joyfullycreating_d903h7p-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjM3MSIsInBhdGgiOiJcL2ZcLzAyMTg5Yzc5LTdmZTgtNDlhYS1hNDE2LWUyY2MyMjVhNjI5ZFwvZDkwM2g3cC1iYTEwZDhlMy03ZDMwLTQyNTMtYWNmOC05M2M2MGMwZWEzY2YuanBnIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.OLFlwMXYkLeVrNtxUn2M3NzvuKl8PKnX55i6pxz5MeM",
+      "genre": "Period Drama",
+      "description": "Teenage Songlian, whose family has been devastated by the recent death of her father, becomes the third concubine of wealthy Master Chen. She soon discovers that behind the palatial luxury of life in the master's house, she and her fellow concubines, Zhuoyan and Meishan, are pitted against each other in a struggle for his affections.",
+      "recommendedBy": "Scarlett",
+      "recommendation": "Recommendation to Come",
+      "watches": 1
+    },
+    {
+      "id": 5,
+      "title": "Marjoe",
+      "poster": "https://www.dvdplanetstore.pk/wp-content/uploads/2017/12/g58MqIxzhjGAIMP4IoNtPkvLFA3.jpg",
+      "genre": "Documentary",
+      "description": "In this revealing documentary, Southern evangelist Marjoe Gortner allows the filmmakers to record him swindling people out of money. Raised to be a child preacher on the revival-tent circuit, Gortner made a small fortune for his parents. Later, he began preaching on his own in a lively, rock star-influenced style, but, since he lacked actual religious faith, money became his sole motivator. As he stages his final revival tour, Marjoe provides a rare glimpse inside the business of evangelism.",
+      "recommendedBy": "Scarlett",
+      "recommendation": "Recommendation to Come",
+      "watches": 1
+    },
+    {
+      "id": 6,
+      "title": "Eternal Sunshine of the Spotless Mind",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTY4NzcwODg3Nl5BMl5BanBnXkFtZTcwNTEwOTMyMw@@._V1_.jpg",
+      "genre": "Romance/Sci-fi",
+      "description": "After a painful breakup, Clementine (Kate Winslet) undergoes a procedure to erase memories of her former boyfriend Joel (Jim Carrey) from her mind. When Joel discovers that Clementine is going to extremes to forget their relationship, he undergoes the same procedure and slowly begins to forget the woman that he loved.",
+      "recommendedBy": "Alison",
+      "recommendation": "Recommendation to Come",
+      "watches": 1
+    },
+    {
+      "id": 7,
+      "title": "The Nightmare Before Christmas",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNWE4OTNiM2ItMjY4Ni00ZTViLWFiZmEtZGEyNGY2ZmNlMzIyXkEyXkFqcGdeQXVyMDU5NDcxNw@@._V1_.jpg",
+      "genre": "Fantasy/Family",
+      "description": "The film follows the misadventures of Jack Skellington, Halloweentown's beloved pumpkin king, who has become bored with the same annual routine of frightening people in the 'real world.' When Jack accidentally stumbles on Christmastown, all bright colors and warm spirits, he gets a new lease on life -- he plots to bring Christmas under his control by kidnapping Santa Claus and taking over the role. But Jack soon discovers even the best-laid plans of mice and skeleton men can go seriously awry.",
+      "recommendedBy": "Alison",
+      "recommendation": "Recommendation to Come",
+      "watches": 1
+    },
+    {
+      "id": 8,
+      "title": "Isle of Dogs",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZDQwOWQ2NmUtZThjZi00MGM0LTkzNDctMzcyMjcyOGI1OGRkXkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg",
+      "genre": "Comedy/Adventure",
+      "description": "When, by executive decree, all the canine pets of Megasaki City are exiled to a vast garbage-dump called Trash Island, 12-year-old Atari sets off alone in a miniature Junior-Turbo Prop and flies across the river in search of his bodyguard-dog, Spots. There, with the assistance of a pack of newly-found mongrel friends, he begins an epic journey that will decide the fate and future of the entire Prefecture.",
+      "recommendedBy": "Alison",
+      "recommendation": "Recommendation to Come",
+      "watches": 2
+    },
+    {
+      "id": 9,
+      "title": "The Others",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTAxMDE4Mzc3ODNeQTJeQWpwZ15BbWU4MDY2Mjg4MDcx._V1_.jpg",
+      "genre": "Horror/Thriller",
+      "description": "Grace (Nicole Kidman), the devoutly religious mother of Anne (Alakina Mann) and Nicholas (James Bentley), moves her family to the English coast during World War II. She awaits word on her missing husband while protecting her children from a rare photosensitivity disease that causes the sun to harm them. Anne claims she sees ghosts, Grace initially thinks the new servants are playing tricks but chilling events and visions make her believe something supernatural has occurred.",
+      "recommendedBy": "Alison",
+      "recommendation": "Recommendation to Come",
+      "watches": 2
+    },
+    {
+      "id": 10,
+      "title": "Do the Right Thing",
+      "poster": "https://cdn.shopify.com/s/files/1/0630/8509/products/flat1266dr_large.jpeg?v=1468596595",
+      "genre": "Drama/Comedy",
+      "description": "Salvatore 'Sal' Fragione (Danny Aiello) is the Italian owner of a pizzeria in Brooklyn. A neighborhood local, Buggin' Out (Giancarlo Esposito), becomes upset when he sees that the pizzeria's Wall of Fame exhibits only Italian actors. Buggin' Out believes a pizzeria in a black neighborhood should showcase black actors, but Sal disagrees. The wall becomes a symbol of racism and hate to Buggin' Out and to other people in the neighborhood, and tensions rise.",
+      "recommendedBy": "Alison",
+      "recommendation": "Recommendation to Come",
+      "watches": 1
+    }
+  ]
 }

@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', (submission) => {
             submission.preventDefault()
             handleInput(submission)
+            creatingFormObj(submission)
         })
 
 })
@@ -45,9 +46,14 @@ function displayFirstMovie(movie1) {
 }
 
 function watchedMovie(movie) {
-    let watchCount = document.querySelector('#number')
-    watchCount.textContent = movie.watches + 1
+    movie.watches+= 1
+        let newWatches = document.querySelector('#number')
+            newWatches.textContent = `${movie.watches}`
     
+    // let watchCount = document.querySelector('.peopleWatched')
+    // watchCount.textContent = movie.watches
+    updateWatches(movie)
+
 }
 
 //grabbing the arrow buttons
@@ -76,6 +82,7 @@ function addingMoviePostersToCarousel(movie) {
 }
 
 function displaySelectedMovie(movie) {
+    document.querySelector('#watchedButton').remove()
     let newTitle = document.querySelector('#title')
         newTitle.textContent = `${movie.title}`
     let newGenre = document.querySelector('#genre')
@@ -91,8 +98,29 @@ function displaySelectedMovie(movie) {
     let newWatches = document.querySelector('#number')
         newWatches.textContent = `${movie.watches}`
 
-    const watchedButton = document.querySelector('#watchedButton')
-    watchedButton.addEventListener('click', () => watchedMovie(movie))
+    let newButton = document.createElement('button')
+        newButton.id = "watchedButton"
+        newButton.textContent = "Watched!"
+
+    let unorderedList = document.querySelector('#filmInfo')
+        unorderedList.appendChild(newButton)
+
+    //const watchedButton = document.querySelector('#watchedButton')
+    newButton.addEventListener('click', () => watchedMovie(movie))
+}
+
+function creatingFormObj(submission) {
+    let movieObj = {
+        title: submission.target.inputTitle.value,
+        poster: submission.target.inputPoster.value,
+        genre: submission.target.inputGenre.value,
+        description: submission.target.inputDescription.value,
+        recommendedBy: submission.target.inputUser.value,
+        recommendation: submission.target.inputRec.value,
+        watches: 1
+
+    }
+    postSubUpdate(movieObj)
 }
 
 function handleInput(submission) {
@@ -159,4 +187,26 @@ function pullInputedValue(submission) {
 
     const watchedButton = document.querySelector('#watchedButton')
     watchedButton.addEventListener('click', () => watchedMovie(movie))
+}
+
+function updateWatches(movie) {
+     fetch(`http://localhost:3000/movies/${movie.id}`, {
+         method: 'PATCH',
+         headers: { 
+             'Content-Type': 'application/json'
+        }, 
+         body:JSON.stringify(movie)
+    })
+     .then(res => res.json())
+     .then(data => console.log(data))
+}
+
+function postSubUpdate(movieObj) {
+    fetch(`http://localhost:3000/movies/`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(movieObj)
+    })
 }
