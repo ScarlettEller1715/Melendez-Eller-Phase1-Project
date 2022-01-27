@@ -1,7 +1,9 @@
-body {
-    background: white;
+* {
     font-family: "Courier", "Lucida Sans Typewriter", 'Times New Roman', Times, serif;
-    background-image: url('https://images.unsplash.com/photo-1601662528567-526cd06f6582?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+}
+
+body {
+    background: url('https://images.unsplash.com/photo-1601662528567-526cd06f6582?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGFwZXIlMjB0ZXh0dXJlfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
 }
 
 #upperContainer {
@@ -11,7 +13,6 @@ body {
     outline: auto;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 #bigPoster {
@@ -78,7 +79,13 @@ body {
 }
 
 #watchedButton {
-    color: blue
+    font-weight: 500;
+    cursor: pointer;
+    background-color: rgb(228, 219, 214);
+    border: 2px solid rgb(202, 183, 174);
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 #slider-area {
@@ -88,30 +95,46 @@ body {
     align-items: center;
 }
 
-.slide-container img {
-    height: 200px;
-    margin-left: 10px;
-    margin-right: 10px;
+h2 {
+    margin: 0px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
+.slide-container img {
+    height: 200px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.slide-container {
+    margin: 0px 1% 0px 1%;
+    padding: 20px;
+}
 
 #my-slider {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
-    width: 100vw
+    width: 100vw;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
 }
 
 #left-button {
-    background-color: red;
     z-index: 1;
     display: flex;
+    margin: 0px 10px 0px 20px;
+    background: rgb(243, 237, 233);
+    cursor: pointer;
 }
 
 #right-button {
-    background-color: blue;
     z-index: 1;
     display: flex;
+    margin: 0px 20px 0px 10px;
+    background: rgb(243, 237, 233);
+    cursor: pointer;
 }
 
 .buttons {
@@ -129,8 +152,6 @@ input {
     margin: 1%;
     display: block;
     background-color: rgb(252, 246, 243);
-    font-family: "Courier", "Lucida Sans Typewriter", 'Times New Roman', Times, serif;
-    /* width: 10px; */
 }
 
 #newFilmRec {
@@ -140,8 +161,8 @@ input {
 #formButton {
     margin: 1%;
     padding: 1%;
-    font-family: "Courier", "Lucida Sans Typewriter", 'Times New Roman', Times, serif;
     background-color: rgb(231, 210, 200);
+    cursor: pointer;
 }
 
 .form-container {
@@ -153,5 +174,4 @@ input {
 
 #newFilmRec .form-container .label {
     display: none;
-    
 }

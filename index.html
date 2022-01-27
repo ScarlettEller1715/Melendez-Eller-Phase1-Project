@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Friendly Film Recs</title>
-        <link rel="stylesheet" href="style.css">
-        <script defer src="script.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
+
+<head>
+    <title>Friendly Film Recs</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
     <div id="pageTitles">
         <h3 id="leftTitle">Friendly Film Recs</h3>
-            <p id="rightTitle">A collective film list for and by your friends</p>
+        <p id="rightTitle">A collective film list for and by your friends</p>
     </div>
     <div id="upperContainer">
-            <img id="bigPoster" src="" alt="">
-            <ul id="filmInfo">
-                <li id="title"></li>
-                <li id="genre"></li>
-                <li id="description"></li>
-                <li id="user"></li>
-                <li id="recommendation"></li>
-                <li id="watches"><p id="number"></p> of your friends have watched!</li>
-            </ul>
+        <img id="bigPoster" src="" alt="">
+        <ul id="filmInfo">
+            <li id="title"></li>
+            <li id="genre"></li>
+            <li id="description"></li>
+            <li id="user"></li>
+            <li id="recommendation"></li>
+            <li id="watches">
+                <p id="number"></p> of your friends have watched!
+            </li>
+        </ul>
     </div>
-            <div id="slider-area">
-                <div class="slider-container">
-                    <h2>Other Recommendations: </h2>
-                    <div class="button-column">
-                        <div class="buttons">
-                            <button id="left-button"> < </button>
-                            <button id="right-button"> > </button>
-                        </div>
-                    </div>
-                    <div id="my-slider"></div>
+    <div id="slider-area">
+        <div class="slider-container">
+            <h2>Other Recommendations: </h2>
+            <div class="button-column">
+                <div class="buttons">
+                    <img id="left-button" src="https://img.icons8.com/external-those-icons-fill-those-icons/24/000000/external-left-arrow-cars-components-those-icons-fill-those-icons.png" />
+                    <img id="right-button" src="https://img.icons8.com/external-those-icons-fill-those-icons/24/000000/external-right-arrow-cars-components-those-icons-fill-those-icons.png" />
                 </div>
-            </div>       
-        
-        <form id="newFilmRec">
-            <div class="form-container">
+            </div>
+            <div id="my-slider"></div>
+        </div>
+    </div>
+
+    <form id="newFilmRec">
+        <div class="form-container">
             <h2>Recommend your favorite!</h2>
             <label class="label" for="newTitle">Title: </label>
             <input id="inputTitle" type="text" name="newTitle" placeholder="Title">
@@ -45,13 +49,14 @@
             <label class="label" for="newDescription">A Short Description:</label>
             <input id="inputDescription" type="text" name="newDescription" placeholder="What is the film about?">
             <label class="label" for="newUserRec">Recommended By: </label>
-            <input id="inputUser" type="text" name="newUserRec" placeholder="Your first name" >
+            <input id="inputUser" type="text" name="newUserRec" placeholder="Your first name">
             <label class="label" for="newRec">Recommendation</label>
-            <input id="inputRec" type="text" name="newRec" placeholder="Why are you reccomending this film?">
+            <input id="inputRec" type="text" name="newRec" placeholder="Why are you recommending this film?">
             <label class="label" for="newPoster">Link to Poster</label>
             <input id="inputPoster" type="text" name="newPoster" placeholder="Link to the Film's Poster">
             <input id="formButton" type='submit' value="Add Recommendation">
-            </div>
-        </form>
-    </body>
+        </div>
+    </form>
+</body>
+
 </html>
